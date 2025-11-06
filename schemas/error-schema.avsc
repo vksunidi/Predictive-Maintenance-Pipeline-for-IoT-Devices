@@ -1,0 +1,24 @@
+{
+    "name": "error",
+    "type": "record",
+    "doc": "schema for error data",
+    "namespace": "quantia.kpm",
+    "fields": [
+        {
+            "name": "deviceID",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        },
+        {
+            "name": "error",
+            "type": {
+                    "type": "enum",
+                    "name": "errorsEnum",
+                    "symbols": ["e1", "e2", "e3", "e4"]
+                }
+        }
+    ]
+}

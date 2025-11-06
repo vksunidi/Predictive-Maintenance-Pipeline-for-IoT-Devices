@@ -1,0 +1,24 @@
+{
+    "name": "warning",
+    "type": "record",
+    "doc": "schema for warning data",
+    "namespace": "quantia.kpm",
+    "fields": [
+        {
+            "name": "deviceID",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        },
+        {
+            "name": "warning",
+            "type": {
+                    "type": "enum",
+                    "name": "warningsEnum",
+                    "symbols": ["w1", "w2", "w3", "w4"]
+                }
+        }
+    ]
+}

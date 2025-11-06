@@ -1,0 +1,12 @@
+{
+    "name": "key",
+    "type": "record",
+    "doc": "schema for error data",
+    "namespace": "quantia.kpm",
+    "fields": [
+        {
+            "name": "deviceID",
+            "type": "string"
+        }
+    ]
+}
